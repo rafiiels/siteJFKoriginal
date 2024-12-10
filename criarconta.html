@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/LojoJFK.png" type="image/x-icon">
+    <title>JFK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark py-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="m-0"><img class="d-block" src="./assets/LojoJFK.png" alt="Logo da JFK">
+                </h1>
+            </a>
+        </div>
+    </nav>
+
+    <form class="card p-4 shadow mx-auto mt-5 mb-5" style="width: 300px; max-width: 100%; margin-top: 50px;">
+        <div class="mb-3">
+            <label for="campoTexto" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="campoTexto" placeholder="Digite seu nome">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="email@exemplo.com">
+            <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+        </div>
+        <div class="mb-3">
+            <label for="campoData" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="campoData">
+        </div>
+        <label for="campoEstado">Estado:</label>
+        <input type="text" id="campoEstado" name="estado" list="estados" class="form-control"
+            placeholder="Digite o estado">
+
+        <datalist id="estados">
+            <option value="Acre">
+            <option value="Alagoas">
+            <option value="Amapá">
+            <option value="Amazonas">
+            <option value="Bahia">
+            <option value="Ceará">
+            <option value="Distrito Federal">
+            <option value="Espírito Santo">
+            <option value="Goiás">
+            <option value="Maranhão">
+            <option value="Mato Grosso">
+            <option value="Mato Grosso do Sul">
+            <option value="Minas Gerais">
+            <option value="Pará">
+            <option value="Paraíba">
+            <option value="Paraná">
+            <option value="Pernambuco">
+            <option value="Piauí">
+            <option value="Rio de Janeiro">
+            <option value="Rio Grande do Norte">
+            <option value="Rio Grande do Sul">
+            <option value="Rondônia">
+            <option value="Roraima">
+            <option value="Santa Catarina">
+            <option value="São Paulo">
+            <option value="Sergipe">
+            <option value="Tocantins">
+        </datalist>
+        <div class="mb-3 my-3">
+            <label class="form-label">Sexo:</label>
+            <div class="d-flex align-items-center gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino">
+                    <label class="form-check-label" for="masculino">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="feminino" value="Feminino">
+                    <label class="form-check-label" for="feminino">Feminino</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Categorias de interesse (marque mais de uma):</label>
+            <div class="d-flex flex-column">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="praia" name="interesse" value="Praia">
+                    <label class="form-check-label" for="praia">Praia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="campo" name="interesse" value="Campo">
+                    <label class="form-check-label" for="campo">Campo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="nacionais" name="interesse" value="Nacionais">
+                    <label class="form-check-label" for="nacionais">Nacionais</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="internacionais" name="interesse"
+                        value="Internacionais">
+                    <label class="form-check-label" for="internacionais">Internacionais</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="serra" name="interesse" value="Serra">
+                    <label class="form-check-label" for="serra">Serra</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cidade" name="interesse" value="Cidade">
+                    <label class="form-check-label" for="cidade">Cidade</label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="d-flex gap-3">
+            <a href="infospagamento.html" class="btn btn-dark w-50 my-3 mx-auto">Criar conta</a>
+            <button type="reset" class="btn btn-dark w-50 my-3 mx-auto">Limpar</button>
+        </div>
+    </form>
+
+    <footer class="text-center my-4">
+
+        <p class="card-text py-3">2024 <i class="bi bi-c-circle"></i> Desenvolvido por Rafael | Projeto estudantil sem
+            fins comerciais.</p>
+
+    </footer>
+
+</body>
+
+</html>
